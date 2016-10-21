@@ -4,7 +4,7 @@ namespace spec\Knp\FriendlyContexts\Http\Security;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
-use Guzzle\Http\Client;
+use GuzzleHttp\Client;
 use Knp\FriendlyContexts\Builder\RequestBuilder;
 use Guzzle\Http\Message\Request;
 

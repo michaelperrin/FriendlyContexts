@@ -4,8 +4,8 @@ namespace spec\Knp\FriendlyContexts\Builder;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
-use Guzzle\Http\ClientInterface;
-use Guzzle\Http\Message\RequestInterface;
+use GuzzleHttp\ClientInterface;
+use Psr\Http\Message\RequestInterface;
 
 class PatchRequestBuilderSpec extends ObjectBehavior
 {

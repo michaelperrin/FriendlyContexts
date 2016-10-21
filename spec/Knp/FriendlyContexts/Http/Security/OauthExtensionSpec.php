@@ -7,12 +7,12 @@ use Prophecy\Argument;
 use Knp\FriendlyContexts\Http\Factory\OauthPluginFactory;
 use Guzzle\Http\Message\Request;
 use Knp\FriendlyContexts\Builder\RequestBuilder;
-use Guzzle\Plugin\Oauth\OauthPlugin;
-use Guzzle\Http\Client;
+use GuzzleHttp\Subscriber\Oauth\Oauth1;
+use GuzzleHttp\Client;
 
 class OauthExtensionSpec extends ObjectBehavior
 {
-    function let(OauthPluginFactory $factory, OauthPlugin $plugin)
+    function let(OauthPluginFactory $factory, Oauth1 $plugin)
     {
         $this->beConstructedWith($factory);
         $factory->create(Argument::cetera())->willReturn($plugin);

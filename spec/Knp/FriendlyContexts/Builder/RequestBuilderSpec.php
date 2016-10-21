@@ -3,7 +3,7 @@
 
 namespace spec\Knp\FriendlyContexts\Builder;
 
-use Guzzle\Http\Client;
+use GuzzleHttp\Client;
 use Guzzle\Http\Message\Request;
 use Knp\FriendlyContexts\Builder\RequestBuilderInterface;
 use Knp\FriendlyContexts\Http\Security\SecurityExtensionInterface;

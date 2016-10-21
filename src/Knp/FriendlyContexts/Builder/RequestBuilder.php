@@ -2,8 +2,8 @@
 
 namespace Knp\FriendlyContexts\Builder;
 
-use Guzzle\Http\ClientInterface;
-use Guzzle\Http\Message\RequestInterface;
+use GuzzleHttp\ClientInterface;
+use Psr\Http\Message\RequestInterface;
 use Knp\FriendlyContexts\Http\Security\SecurityExtensionInterface;
 
 class RequestBuilder implements RequestBuilderInterface
@@ -35,13 +35,13 @@ class RequestBuilder implements RequestBuilderInterface
     private static function getAcceptedMethods()
     {
         return [
-            RequestInterface::GET,
-            RequestInterface::PUT,
-            RequestInterface::POST,
-            RequestInterface::DELETE,
-            RequestInterface::HEAD,
-            RequestInterface::OPTIONS,
-            RequestInterface::PATCH
+            'GET',
+            'PUT',
+            'POST',
+            'DELETE',
+            'HEAD',
+            'OPTIONS',
+            'PATCH'
         ];
     }
 
